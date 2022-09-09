@@ -1,7 +1,7 @@
-int red = color(255, 0, 0);
-int yellow = color(255, 245, 39);
-int green = color(0, 255, 0);
-int gray = color(155);
+color red = color(255, 0, 0);
+color yellow = color(255, 245, 39);
+color green = color(0, 255, 0);
+color gray = color(155);
 int time = 0;
 
 void setup ()
