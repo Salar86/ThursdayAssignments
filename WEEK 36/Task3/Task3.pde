@@ -6,10 +6,10 @@ int time = 0;
 
 void setup ()
 {
-  background (255);
+  background (0);
   stroke (0);
   fullScreen ();
-  frameRate(10);
+  frameRate(25);
 }
 
 void draw()
