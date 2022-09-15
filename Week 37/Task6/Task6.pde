@@ -18,7 +18,7 @@
   int minimum(int a, int b) {
     if (a < b) {
       //int smaller = a; // THIS LINE IS UNNECESSARY
-      println("a is the smallest!");
+      println(a+" is the smallest!");
       return a; 
     } 
    
