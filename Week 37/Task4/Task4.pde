@@ -36,3 +36,7 @@ int calculateAverage(int[] a)
   
   return average;
 }
+
+/* As far as 4e is concerned, processing has the sort() feature 
+that arranges arrays of numbers from lowest to highest and 
+alphabetizes arrays of words */
