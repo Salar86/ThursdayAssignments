@@ -9,7 +9,4 @@ void setup()
   isMe.namePrinter();
   isTeacher.teachNamePrinter();
   isStudent.namePrinter();
-  
 }
-  
-  

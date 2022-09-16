@@ -1,13 +1,13 @@
 void setup()
 {
-  line();
+  emptyLine();
   println(myString(" "));
   myNameAndAge("Salar",36);
   
   
 }
 
-void line()
+void emptyLine()
 {
   println(" ");
 }
