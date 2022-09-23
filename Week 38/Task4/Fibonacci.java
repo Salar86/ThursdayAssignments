@@ -8,7 +8,7 @@ class Fibonacci{
 		this.b = b;
 		this.sum = a+b;
 	}
-	public static void printFibonacci(){
+	public int printFibonacci(){
 		System.out.println(a);
 		for (int i = 0; i <=1000; ++i){
 			sum = a+b;

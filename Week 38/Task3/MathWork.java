@@ -3,7 +3,7 @@ import java.util.Random;
 class MathWork{
 	private int a;
 	private int[] arr = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 8, 9, 9, 10 };
-	//private int randomMath = random(0,arr.length);
+	
 	
 
 	MathWork(int a){
@@ -15,8 +15,8 @@ class MathWork{
 			
 			
 			if (i % a == 0){
-			System.out.println(i + ", ");
-				//return i;
+			System.out.println("My divisble numbers; "+i + ", "); 
+				
 			}
 			
 		}
