@@ -8,6 +8,10 @@ import java.util.Scanner;
 public class Cafe {
     private ArrayList<String> coffeeMenu = new ArrayList<>();
 
+    public ArrayList<String> getCoffeeMenu() {
+        return coffeeMenu;
+    }
+
 
     public void loadMenuData() {
         File file = new File("coffees.txt");
