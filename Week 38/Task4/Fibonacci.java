@@ -13,7 +13,7 @@ class Fibonacci{
 		for (int i = 0; i <=1000; ++i){
 			sum = a+b;
 			if (sum >= 1000 || a >= 1000 || b >=1000) return b;
-			System.out.println(sum +"\t");
+			System.out.print(sum +"\t");
 			a = b;
 			b = sum;
 		}
