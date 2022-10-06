@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class Main
+class Car
+class Driver
+
+Main : - static Driver me
+Main : - static Car myCar
+Main : - static Car myCar2
+Main : + public static void main(String[] args)
+Car : - private String Make
+Car : - private String Model
+Car : - private int year
+Car : - private Driver driver
+Car : + public Car(String make, String model, int year, String bodyStyle)
+Car : + public Driver getDriver()
+Car : + public void setDriver(Driver driver)
+Car : + public String toString()
+Driver : - private String name
+Driver : - private int age
+Driver : + public String toString()
+
+Main *-- Car : has-a
+Main *-- Driver : has-a
+Car *-- Driver : has-a
+
+
+@enduml

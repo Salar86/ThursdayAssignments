@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class Main
+class Building
+class Room
+
+Main : + public static void main(String[] args)
+Main : + public static int countLampsInBuilding(Building building)
+Main : + public static boolean isNormal(Building building)
+
+Building : - private final ArrayList<Room> rooms
+Building : - private int numberOfBathrooms
+Building : - private int numberOfFloors
+Building : - private boolean isOfficeBuilding
+Building : + public Building(int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding)
+Building : + public void addRoom(Room room)
+Building : + public ArrayList<Room> getRooms()
+Building : + public int getNumberOfFloors()
+
+Room : - private int numberOfDoors
+Room : - private int numberOfLamps
+Room : - private int numberOfWindows
+Room : - private Building building
+Room : + public Room(int numberOfDoors, int numberOfLamps, int numberOfWindows)
+Room : + public int getNumberOfDoors()
+Room : + public int getNumberOfLamps()
+Room : + public int getNumberOfWindows()
+Room : + public String toString()
+Room : + public void setBuilding(Building building)
+
+Main *-- Room : has-a
+Main *-- Building : has-a
+Building *-- Room : has-a
+@enduml
